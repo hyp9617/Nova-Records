@@ -84,12 +84,13 @@ h1, h2 {
 }
 
 .details {
+  font-size: 1.8rem;
   padding: 1rem;
   text-transform: uppercase;
   border: 3px #9B9B9B solid;
   border-radius: 2px;
   color: #9B9B9B;
-  width: 26rem;
+  width: 29rem;
   text-align: center;
   transition: 0.3s;
 }
@@ -102,6 +103,6 @@ h1, h2 {
 }
 
 .artist-details {
-  width: 27rem;
+  width: 30rem;
   margin-bottom: 1.5rem;
 }
