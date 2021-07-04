@@ -65,7 +65,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 65vh;
+  height: 70vh;
   margin-left: 10rem;
 }
 
@@ -76,7 +76,7 @@ h1 {
 
 h2 {
   font-size: 3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
 }
 
 h1, h2 {
@@ -89,7 +89,7 @@ h1, h2 {
   border: 3px #9B9B9B solid;
   border-radius: 2px;
   color: #9B9B9B;
-  width: 23rem;
+  width: 25rem;
   text-align: center;
   transition: 0.3s;
 }
@@ -99,4 +99,9 @@ h1, h2 {
   border-color: #fff;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.artist-details {
+  width: 27rem;
+  margin-bottom: 1.5rem;
 }
