@@ -14,14 +14,13 @@ body {
 }
 
 /* ----------- */
-/* Header Style */
+/* Nav Style */
 /* ----------- */
 
 nav {
   display: flex;
-  /* justify-content: space-evenly; */
-  padding: 1rem 6rem;
-  /* background-color: #000; */
+  justify-content: space-between;
+  padding: 3rem 10rem;
 }
 
 .btn-container {
@@ -31,23 +30,19 @@ nav {
 
 .btn-container li{
   display: inline-block;
+  margin-right: 5rem;
 }
 
 a {
   font-weight: bold;
   font-size: 2.2rem;
   text-decoration: none;
-  text-transform: capitalize;
+  text-transform: uppercase;
   color: #fff;
 }
 
 img {
   width: 15rem;
-  height: 8rem;
-}
-
-li, #logo {
-  margin-right: 10rem;
 }
 
 /* ----------- */
@@ -96,7 +91,6 @@ h1, h2 {
 }
 
 .details:hover {
-  transition: 0.3s;
   border-color: #fff;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.5);
