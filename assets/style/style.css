@@ -7,6 +7,7 @@
 html {
   font-size: 62.5%;
   color: #fff;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -35,7 +36,7 @@ nav {
 }
 
 a {
-  font-weight: bold;
+  font-weight: 600;
   font-size: 2.2rem;
   text-decoration: none;
   text-transform: uppercase;
@@ -48,7 +49,7 @@ img {
 
 .btn-container li:hover {
   padding-bottom: 0.5rem;
-  border-bottom: 3px #fff solid;
+  border-bottom: 2.5px #fff solid;
 }
 
 /* ----------- */
