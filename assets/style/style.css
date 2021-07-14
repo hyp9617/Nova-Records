@@ -116,7 +116,9 @@ h1, h2 {
 /* ----------- */
 
 .section-event {
-  background-color: black;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.95)), url("../img/event.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .event-container {
@@ -133,6 +135,15 @@ h1, h2 {
 .event-box i {
   font-size: 4rem;
   margin-bottom: 2rem;
+}
+
+.event-box p {
+  margin-bottom: 4rem;
+}
+
+.event-box a {
+  float: right;
+  width: 20rem;
 }
 
 h3 {
