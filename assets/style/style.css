@@ -53,7 +53,7 @@ img {
 
 .btn-container li:hover {
   padding-bottom: 0.5rem;
-  border-bottom: 2.5px #fff solid;
+  border-bottom: 2.5px #e9204f solid;
 }
 
 /* ----------- */
@@ -88,16 +88,19 @@ h1, h2 {
   text-transform: uppercase;
 }
 
-.details {
+.btn {
   font-size: 1.8rem;
   padding: 1rem;
   text-transform: uppercase;
   border: 3px #9B9B9B solid;
   border-radius: 2px;
-  color: #9B9B9B;
-  width: 29rem;
   text-align: center;
   transition: 0.3s;
+}
+
+.details {
+  color: #9B9B9B;
+  width: 29rem;
 }
 
 .details:hover {
@@ -146,8 +149,14 @@ h1, h2 {
   width: 20rem;
 }
 
+.event-box a:hover {
+  color: #e9204f;
+}
+
 h3 {
   text-transform: uppercase;
   font-size: 3rem;
   margin-bottom: 2rem;
+  color: #e9204f;
 }
+
