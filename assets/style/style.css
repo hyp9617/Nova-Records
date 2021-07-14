@@ -31,6 +31,7 @@ nav {
 .btn-container li{
   display: inline-block;
   margin-right: 5rem;
+  transition: 0.3s;
 }
 
 a {
@@ -43,6 +44,11 @@ a {
 
 img {
   width: 15rem;
+}
+
+.btn-container li:hover {
+  padding-bottom: 0.5rem;
+  border-bottom: 3px #fff solid;
 }
 
 /* ----------- */
