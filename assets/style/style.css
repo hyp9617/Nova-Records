@@ -65,7 +65,7 @@ img {
 /* ----------- */
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(../img/Ineffa\ Lucas\ -\ Code\ Zero\ 5.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url("../img/Code\ Zero\ Vol.1\ LordSeez\ 1.jpg");
   background-size: cover;
   background-attachment: fixed;
   height: 100vh;
@@ -125,8 +125,10 @@ h1, h2 {
 /* ----------- */
 
 .section-event {
-  background-color: #181818;
+  /* background-color: #181818; */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url("../img/73298295_961488927565006_606185787167342592_o.jpg");
   background-position: center;
+  background-attachment: fixed;
   background-size: cover;
 }
 
@@ -174,10 +176,11 @@ h3 {
 /* ----------- */
 
 .section-artist {
-  height: 100vh;
+  height: 90vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url("../img/artist-background.jpg");
   /* background-position: center; */
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .section-artist-container {
@@ -186,10 +189,9 @@ h3 {
 
 .artist {
   border: 2px solid #fff;
-  height: 50rem;
-  flex-basis: 33%;
-  padding: 5rem;
-  font-size: 3rem;
+  height: 40rem;
+  flex-basis: 20%;
+  padding: 3rem 2rem;
   text-transform: capitalize;
 }
 
@@ -197,16 +199,45 @@ h3 {
   margin-right: 10rem;
 }
 
-.artist > a {
+.artist>a {
   display: block;
   text-align: center;
-  width: 30rem;
+  width: 25rem;
   height: 30rem;
-  margin: 0 auto 3rem;
+  margin: 0 auto 2rem;
 }
 
 #lucas {
-  background-image: url(../img/우진.PNG);
-  background-position: top;
+  background-image: url("../img/lucas.JPG");
+  background-position: center;
+  background-size: cover;
 }
 
+#jpular {
+  background-image: url(../img/jpular.JPG);
+  background-position: center;
+  background-size: cover;
+}
+
+.artist-name {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* ----------- */
+
+/* Section-about Style */
+
+/* ----------- */
+
+.section-about {
+  background-color: #181818;
+  height: 100vh;
+}
+
+.section-about-header {
+  font-size: 5rem;
+  text-align: center;
+}
