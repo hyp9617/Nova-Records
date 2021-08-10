@@ -8,6 +8,7 @@ html {
   font-size: 62.5%;
   color: #fff;
   font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -39,6 +40,7 @@ nav {
   display: inline-block;
   margin-right: 5rem;
   transition: 0.3s;
+  border-bottom: 2px solid transparent;
 }
 
 a {
@@ -55,7 +57,7 @@ img {
 
 .btn-container li:hover {
   padding-bottom: 0.5rem;
-  border-bottom: 2.5px #e9204f solid;
+  border-bottom-color: #e9204f;
 }
 
 /* ----------- */
@@ -85,10 +87,16 @@ h1 {
 
 h2 {
   font-size: 3rem;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
-h1, h2 {
+h3 {
+  font-size: 5rem;
+  margin-bottom: 8rem;
+  text-align: center;
+}
+
+h1, h2, h3 {
   text-transform: uppercase;
 }
 
@@ -162,7 +170,7 @@ h1, h2 {
   color: #e9204f;
 }
 
-h3 {
+h4 {
   text-transform: uppercase;
   font-size: 3rem;
   margin-bottom: 2rem;
