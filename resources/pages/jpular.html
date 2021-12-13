@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nova Records</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <a href="../../index.html" class="nav__link nav__link--logo">
+        <img
+          src="../img/logo.png"
+          alt="Nova Records Logo"
+          class="nav__logo"
+        />
+      </a>
+
+      <ul class="nav__list--menu">
+        <li class="nav__item nav__item--menu">
+          <a href="#" class="nav__link nav__link--section">overview</a>
+        </li>
+        <li class="nav__item nav__item--menu">
+          <a href="#" class="nav__link nav__link--section">events</a>
+        </li>
+        <li class="nav__item nav__item--menu">
+          <a href="#" class="nav__link nav__link--section">artists</a>
+        </li>
+        <li class="nav__item nav__item--menu">
+          <a href="#" class="nav__link nav__link--section">about</a>
+        </li>
+
+        <div class="dropdown">
+          <ul class="dropdown__list">
+            <li class="dropdown__item dropdown__item--title">overview</li>
+            <li class="dropdown__item">
+              <a href="../pages/news.html" class="dropdown__link"
+                >news</a
+              >
+            </li>
+            <li class="dropdown__item">
+              <a href="../pages/projects.html" class="dropdown__link"
+                >projects</a
+              >
+            </li>
+          </ul>
+
+          <ul class="dropdown__list">
+            <li class="dropdown__item dropdown__item--title">events</li>
+            <li class="dropdown__item">
+              <a
+                href="../pages/previous-events.html"
+                class="dropdown__link"
+                >previous events</a
+              >
+            </li>
+            <li class="dropdown__item">
+              <!-- <a href="#" class="dropdown__link">upcoming events</a> -->
+            </li>
+          </ul>
+
+          <ul class="dropdown__list">
+            <li class="dropdown__item dropdown__item--title">artists</li>
+            <li class="dropdown__item">
+              <a href="../pages/lucas.html" class="dropdown__link"
+                >ineffa lucas</a
+              >
+            </li>
+            <li class="dropdown__item">
+              <a href="../pages/jpular.html" class="dropdown__link"
+                >j.pular</a
+              >
+            </li>
+          </ul>
+
+          <ul class="dropdown__list">
+            <li class="dropdown__item dropdown__item--title">about</li>
+            <li class="dropdown__item">
+              <a href="../pages/about.html" class="dropdown__link"
+                >about us</a
+              >
+            </li>
+            <li class="dropdown__item">
+              <a href="../pages/team.html" class="dropdown__link"
+                >team nova</a
+              >
+            </li>
+          </ul>
+        </div>
+      </ul>
+
+      <ul class="nav__list--tool">
+        <li class="nav__item nav__item--contact">
+          <button class="nav__btn nav__btn--contact">contact us</button>
+        </li>
+        <li class="nav__item nav__item--language">
+          <a href="#" class="nav__link nav__link--language">en</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="section-popup section-popup__hide">
+      <div class="section-popup__content">
+        <h2 class="heading-secondary">contact us</h2>
+        <form class="form">
+          <div class="form__element">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Full name"
+              class="form__input form__input--name"
+            />
+          </div>
+          <div class="form__element">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              class="form__input form__input--email"
+            />
+          </div>
+          <div class="form__element">
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="Subject"
+              class="form__input form__input--subject"
+            />
+          </div>
+
+          <div class="form__element">
+            <textarea
+              name="message"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Message"
+              class="form__input form__input--message"
+            ></textarea>
+          </div>
+          <div class="form__element form__element--btn">
+            <button class="form__btn">send message</button>
+          </div>
+        </form>
+
+        <span class="section-popup__close">
+          <i class="fas fa-times section-popup__icon"></i>
+        </span>
+      </div>
+    </section>
+    
+    <section class="section-jpular">
+      <h2 class="heading-secondary">j.pular</h2>
+      <div class="profile">
+        <img
+          src="../img/jpular.JPG"
+          alt="lucas photo"
+          class="profile__photo--primary"
+        />
+        <div class="profile__content">
+          <p class="profile__text">
+            J.Pular is very much a popular name within the New Zealand music
+            industry as a South Korean artist, and is a growing sensation. From
+            being introduced to the scene in 2020, J.Pular has gained a large
+            following, not only nation-wide but also internationally. His recent
+            2021 single, ‘Radar’ was a huge success and his upcoming projects
+            are all ones to look forward to!
+          </p>
+          <div class="social-box">
+            <a
+              href="https://www.youtube.com/channel/UCKc1qsoJ1LUJAhElSDGiX3Q"
+              class="social-box__link"
+              ><i
+                class="
+                  fab
+                  fa-youtube
+                  social-box__icon social-box__icon--youtube
+                "
+              ></i></a
+            ><a
+              href="https://soundcloud.com/user-856180766-884220461"
+              class="social-box__link"
+              ><i
+                class="
+                  fab
+                  fa-soundcloud
+                  social-box__icon social-box__icon--soundcloud
+                "
+              ></i></a
+            ><a
+              href="https://www.instagram.com/jpularinthetown/?hl=en"
+              class="social-box__link"
+              ><i
+                class="
+                  fab
+                  fa-instagram
+                  social-box__icon social-box__icon--instagram
+                "
+              ></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <img src="../img/logo.png" alt="footer logo" class="footer__logo" />
+        <p class="copyright">
+          Copyright &copy; 2021 by Nova Records. All rights reserved.
+        </p>
+        <div class="footer__social">
+          <a
+            href="https://www.youtube.com/channel/UC1LXkD1nH4If_6mbxqDl4QA"
+            class="footer__link footer__link--youtube"
+            ><i class="fab fa-youtube footer__icon footer__icon--youtube"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/novarecords.nz"
+            class="footer__link footer__link--facebook"
+            ><i
+              class="fab fa-facebook-square footer__icon footer__icon--facebook"
+            ></i
+          ></a>
+          <a
+            href="https://www.instagram.com/novarecords.nz/"
+            class="footer__link footer__link--instagram"
+            ><i
+              class="fab fa-instagram footer__icon footer__icon--instagram"
+            ></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+// Media query
+
+// 2000+ extra large
+// 1729 - 1999 Default
+// 1489 - 1728 large laptop & desktop
+// 1025 - 1488 large tablet & laptop
+// 592 - 1024 large phone & small tablet
+// 0 - 591 small phone
+
+@media only screen and (min-width: 2000px) {
+  html {
+    font-size: 65%;
+  }
+
+  .nav {
+    max-width: 100%;
+    margin: auto;
+
+    &__list {
+      &--menu {
+        margin-right: 0;
+        padding: 4rem 20rem;
+      }
+    }
+  }
+
+  // index.html
+  .card {
+    &__content {
+      &--img {
+        width: 9rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1728px) {
+  .nav {
+    &__list {
+      &--menu {
+        margin-right: 10rem;
+      }
+    }
+  }
+
+  .heading-primary {
+    @include container(14rem);
+  }
+
+  // index.html
+  .header {
+    &__container {
+      @include container(14rem);
+    }
+  }
+}
+
+@media only screen and (max-width: 1488px) {
+  html {
+    font-size: 58%;
+  }
+
+  .nav {
+    &__list {
+      &--menu {
+        margin-right: 0;
+        padding: 4rem 0;
+      }
+    }
+  }
+
+  .heading-primary {
+    @include container(11rem);
+  }
+
+  // index.html
+  .header {
+    &__container {
+      @include container(11rem);
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .nav {
+    flex-direction: column;
+  }
+}

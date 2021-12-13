@@ -1,89 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nova Records</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nova Records</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
 
-  <!-- Font Link -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <!-- Icon Link -->
-  <script src="https://kit.fontawesome.com/768822f290.js" crossorigin="anonymous"></script>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./resources/css/style.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <a href="#" class="nav__link nav__link--logo">
+        <img
+          src="./resources/img/logo.png"
+          alt="Nova Records Logo"
+          class="nav__logo"
+        />
+      </a>
 
-  <!-- Index Page Style -->
-  <link rel="stylesheet" href="./assets/style/style.css">
-</head>
+      <ul class="nav__list--menu">
+        <li class="nav__item nav__item--menu">
+          <a href="#" class="nav__link nav__link--section">overview</a>
+        </li>
+        <li class="nav__item nav__item--menu">
+          <a href="#" class="nav__link nav__link--section">events</a>
+        </li>
+        <li class="nav__item nav__item--menu">
+          <a href="#" class="nav__link nav__link--section">artists</a>
+        </li>
+        <li class="nav__item nav__item--menu">
+          <a href="#" class="nav__link nav__link--section">about</a>
+        </li>
 
-<body>
-  <header>
-    <nav>
-      <a href="./index.html"><img src="./assets/img/logo.png" alt="novaRecordsLogo"></a>
-      <ul class="btn-container">
-        <li><a href="./index.html">home</a></li>
-        <li><a href="#section-event">events</a></li>
-        <li><a href="#">artists</a></li>
-        <li><a href="#">about</a></li>
-        <li><a href="#">contact</a></li>
+        <div class="dropdown">
+          <ul class="dropdown__list">
+            <li class="dropdown__item dropdown__item--title">overview</li>
+            <li class="dropdown__item">
+              <a href="./resources/pages/news.html" class="dropdown__link"
+                >news</a
+              >
+            </li>
+            <li class="dropdown__item">
+              <a href="./resources/pages/projects.html" class="dropdown__link"
+                >projects</a
+              >
+            </li>
+          </ul>
+
+          <ul class="dropdown__list">
+            <li class="dropdown__item dropdown__item--title">events</li>
+            <li class="dropdown__item">
+              <a
+                href="./resources/pages/previous-events.html"
+                class="dropdown__link"
+                >previous events</a
+              >
+            </li>
+            <li class="dropdown__item">
+              <!-- <a href="#" class="dropdown__link">upcoming events</a> -->
+            </li>
+          </ul>
+
+          <ul class="dropdown__list">
+            <li class="dropdown__item dropdown__item--title">artists</li>
+            <li class="dropdown__item">
+              <a href="./resources/pages/lucas.html" class="dropdown__link"
+                >ineffa lucas</a
+              >
+            </li>
+            <li class="dropdown__item">
+              <a href="./resources/pages/jpular.html" class="dropdown__link"
+                >j.pular</a
+              >
+            </li>
+          </ul>
+
+          <ul class="dropdown__list">
+            <li class="dropdown__item dropdown__item--title">about</li>
+            <li class="dropdown__item">
+              <a href="./resources/pages/about.html" class="dropdown__link"
+                >about us</a
+              >
+            </li>
+            <li class="dropdown__item">
+              <a href="./resources/pages/team.html" class="dropdown__link"
+                >team nova</a
+              >
+            </li>
+          </ul>
+        </div>
+      </ul>
+
+      <ul class="nav__list--tool">
+        <li class="nav__item nav__item--contact">
+          <button class="nav__btn nav__btn--contact">contact us</button>
+        </li>
+        <li class="nav__item nav__item--language">
+          <a href="#" class="nav__link nav__link--language">en</a>
+        </li>
       </ul>
     </nav>
-    <div class="hero-box">
-      <h1>nova records</h1>
-      <h2>entertainment & productions</h2>
-      <a href="#" class="artist-details btn details">check out our artists <i class="fas fa-arrow-right"></i></a>
-      <a href="#" class="details btn">check out our events <i class="fas fa-arrow-right"></i></a>
-    </div>
-  </header>
 
-  <main>
-    <section class="section-event" id="section-event">
-      <h3>event</h3>
-      <div class="event-container">
-        <div class="event-box">
-          <i class="fas fa-calendar-check"></i>
-          <h4>previous events</h2>
-            <p>Check out the unreal moments from some of the thrilling past events Nova Records had hosted and/or
-              organised previously! </p>
-            <a href="#" class="btn">check out more</a>
-        </div>
-        <div class="event-box">
-          <i class="far fa-calendar-plus"></i>
-          <h4>upcoming events</h4>
-          <p>Find out more about some of the upcoming events and awesome exFperiences Nova Records is hosting and/or
-            organising! Trust us, you do not want to miss out!
-          </p>
-          <a href="#" class="btn">find out more</a>
-        </div>
+    <section class="section-popup section-popup__hide">
+      <div class="section-popup__content">
+        <h2 class="heading-secondary">contact us</h2>
+        <form class="form">
+          <div class="form__element">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Full name"
+              class="form__input form__input--name"
+            />
+          </div>
+          <div class="form__element">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              class="form__input form__input--email"
+            />
+          </div>
+          <div class="form__element">
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="Subject"
+              class="form__input form__input--subject"
+            />
+          </div>
+
+          <div class="form__element">
+            <textarea
+              name="message"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Message"
+              class="form__input form__input--message"
+            ></textarea>
+          </div>
+          <div class="form__element form__element--btn">
+            <button class="form__btn">send message</button>
+          </div>
+        </form>
+
+        <span class="section-popup__close">
+          <i class="fas fa-times section-popup__icon"></i>
+        </span>
       </div>
     </section>
 
-    <section class="section-artist">
-      <h3>artists</h3>
-      <div class="section-artist-container">
-        <div class="artist">
-          <a href="#section-artist" id="lucas"></a>
-          <div class="artist-name">ineffa lucas</div>
-        </div>
-
-        <div class="artist">
-          <a href="#section-artist" id="jpular"></a>
-          <div class="artist-name">j.pular</div>
-        </div>
-        
-        <!-- <div class="artist">
-          <a href="#section-artist"></a>
-          unknown
-        </div> -->
+    <header class="header">
+      <div class="hero-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary__top"> nova records </span>
+          <span class="heading-primary__bottom">
+            entertainment & productions
+          </span>
+        </h1>
       </div>
-    </section>
 
-    <section class="section-about">
-      <h3 class="section-about-header">about us</h3>
-    </section>
-  </main>
-</body>
+      <div class="header__container">
+        <div class="card card--events">
+          <p class="card__title">events</p>
+          <a href="#" class="card__link card__link--general">
+            <span class="card__content card__content--date">14/08/2021</span>
+            <span class="card__content">k - festival</span>
+          </a>
+          <a href="#" class="card__link card__link--general">
+            <span class="card__content card__content--date">06/11/2020</span>
+            <span class="card__content">supernova vol.1</span>
+          </a>
+          <a href="#" class="card__link card__link--general">
+            <span class="card__content card__content--date">13/02/2020</span>
+            <span class="card__content">code zero</span>
+          </a>
+        </div>
 
+        <div class="card card--projects">
+          <p class="card__title">projects</p>
+          <a
+            href="https://www.youtube.com/watch?v=CwSJwO5BZXM&ab_channel=NovaRecords"
+            class="card__link card__link--general"
+          >
+            <img
+              src="./resources/img/radar.jpeg"
+              alt="jpular thumbnail"
+              class="card__content--img"
+            />
+            <span class="card__content">j.pular - radar</span>
+          </a>
+          <a
+            href="https://www.youtube.com/watch?v=RVqW9e06i1w&ab_channel=NovaRecords"
+            class="card__link card__link--general"
+          >
+            <img
+              src="./resources/img/tellMeMore.jpeg"
+              alt="ineffa crew thumbnail"
+              class="card__content--img"
+            />
+            <span class="card__content">ineffa crew - tell me more</span>
+          </a>
+          <a
+            href="https://www.youtube.com/watch?v=2I3Sc4f6qpg&ab_channel=NovaRecords"
+            class="card__link card__link--general"
+          >
+            <img
+              src="./resources/img/promise.jpeg"
+              alt="lucas thumbnail"
+              class="card__content--img"
+            />
+            <span class="card__content"
+              >ineffa lucas - promise it'll be okay</span
+            >
+          </a>
+        </div>
+
+        <div class="card card--container">
+          <div class="card card--news">
+            <p class="card__title">news</p>
+            <a
+              href="http://www.okja.org/interview/174276"
+              class="card__link card__link--general"
+            >
+              <span class="card__content"
+                >한인 1.5세대 이준우(J. Pular) 힙합 신인가수</span
+              >
+            </a>
+            <a href="#" class="card__link card__link--general">
+              <span class="card__content card__content--date"></span>
+              <span class="card__content"></span>
+            </a>
+          </div>
+
+          <div class="card social-box">
+            <a
+              href="https://www.youtube.com/channel/UC1LXkD1nH4If_6mbxqDl4QA"
+              class="card__link social-box__link"
+              ><i
+                class="
+                  fab
+                  fa-youtube
+                  social-box__icon social-box__icon--youtube
+                "
+              ></i
+            ></a>
+            <a
+              href="https://www.facebook.com/novarecords.nz"
+              class="card__link social-box__link"
+              ><i
+                class="
+                  fab
+                  fa-facebook-square
+                  social-box__icon social-box__icon--facebook
+                "
+              ></i
+            ></a>
+            <a
+              href="https://www.instagram.com/novarecords.nz/"
+              class="card__link social-box__link"
+              ><i
+                class="
+                  fab
+                  fa-instagram
+                  social-box__icon social-box__icon--instagram
+                "
+              ></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <img
+          src="./resources/img/logo.png"
+          alt="footer logo"
+          class="footer__logo"
+        />
+        <p class="copyright">
+          Copyright &copy; 2021 by Nova Records. All rights reserved.
+        </p>
+        <div class="footer__social">
+          <a
+            href="https://www.youtube.com/channel/UC1LXkD1nH4If_6mbxqDl4QA"
+            class="footer__link footer__link--youtube"
+            ><i class="fab fa-youtube footer__icon footer__icon--youtube"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/novarecords.nz"
+            class="footer__link footer__link--facebook"
+            ><i
+              class="fab fa-facebook-square footer__icon footer__icon--facebook"
+            ></i
+          ></a>
+          <a
+            href="https://www.instagram.com/novarecords.nz/"
+            class="footer__link footer__link--instagram"
+            ><i
+              class="fab fa-instagram footer__icon footer__icon--instagram"
+            ></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <script src="./resources/js/index.js"></script>
+  </body>
 </html>

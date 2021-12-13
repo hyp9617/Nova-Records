@@ -1,0 +1,326 @@
+// header
+.header {
+  @include section-height;
+
+  &__container {
+    @include flex(space-around);
+    @include container;
+  }
+}
+
+// .hero-box
+.hero-box {
+  @include flex;
+  align-items: center;
+  height: 55vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0)
+    ),
+    url("../img/header-background.jpg");
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 8rem;
+}
+
+.card {
+  &:not(&--container) {
+    border: 1px solid $color-grey-light-1;
+    padding: 1rem 1rem 0 1rem;
+  }
+
+  &:not(&--news, &--social) {
+    flex-basis: 30%;
+  }
+
+  &--events,
+  &--projects {
+    margin-right: 5rem;
+  }
+
+  &--news {
+    margin-bottom: 0.5rem;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid $color-grey-light-1;
+  }
+
+  &__link {
+    &--general {
+      display: block;
+      text-decoration: none;
+      color: $color-grey-medium;
+      height: 6rem;
+      line-height: 6rem;
+
+      &:not(:last-of-type) {
+        border-bottom: 1px solid $color-grey-light-1;
+      }
+    }
+  }
+
+  &__content {
+    text-transform: capitalize;
+
+    &--date,
+    &--img {
+      margin-right: 1rem;
+    }
+
+    &--img {
+      width: 8rem;
+      vertical-align: middle;
+    }
+  }
+}
+
+// section-news
+
+.section-news {
+  @include container;
+  @include section-height;
+}
+
+.table {
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  margin-top: 15rem;
+  border-collapse: collapse;
+
+  &__header {
+    padding: 2rem 1rem;
+    text-transform: uppercase;
+    background-color: $color-grey-medium;
+    color: $color-white;
+  }
+
+  &__data {
+    padding: 2rem;
+    border-bottom: 1px solid $color-grey-light-2;
+  }
+}
+
+// section-projects
+
+.section-projects {
+  @include container;
+
+  &__project {
+    margin-bottom: 10rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__container {
+    @include video-container;
+  }
+
+  &__video {
+    @include video;
+  }
+}
+
+
+
+// section-previous-events
+
+.section-previous-events {
+  @include container;
+}
+
+.link-container {
+  text-align: center;
+  margin-bottom: 7rem;
+}
+
+.year {
+  &__link {
+    display: inline-block;
+    text-decoration: none;
+    color: $color-grey-medium;
+    font-weight: 700;
+    font-size: 2.3rem;
+    opacity: 0.6;
+    transition: 0.2s;
+    border-bottom: 1px solid transparent;
+
+    &:not(&--2021) {
+      margin-right: 3rem;
+    }
+
+    &:hover {
+      opacity: 1;
+      border-bottom-color: $color-grey-medium;
+    }
+  }
+
+  &-container {
+    border-width: 4px 0 4px 4px;
+    border-style: solid;
+    border-image: linear-gradient(
+        to bottom,
+        $color-grey-dark 50%,
+        $color-primary-red
+      )
+      1 100%;
+    padding: 3rem 0 3rem 5rem;
+    margin-bottom: 10rem;
+  }
+
+  &__project {
+    margin: 0 0 7rem 1rem;
+  }
+
+  &__title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  &__details {
+    margin-bottom: 1.2rem;
+
+    &--title {
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-right: 0.3rem;
+    }
+  }
+
+  &__paragraph {
+    margin-bottom: 3rem;
+  }
+
+  &__video {
+    &-container {
+      @include video-container;
+    }
+
+    &--supernova-vol1 {
+      @include video;
+    }
+  }
+}
+
+// profile
+.profile {
+  @include flex();
+
+  &__gallery {
+    width: 50%;
+    margin-right: 10rem;
+
+    &--additional {
+      @include flex;
+    }
+  }
+
+  &__photo {
+    &--primary {
+      max-width: 65rem;
+      margin-bottom: 1rem;
+    }
+
+    &--secondary {
+      display: inline;
+      max-width: 49%;
+    }
+  }
+
+  &__text {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    line-height: 1.8;
+    margin-bottom: 4rem;
+  }
+}
+
+// section-lucas
+.section-lucas {
+  @include container;
+  @include section-height;
+}
+
+// section-jpular
+.section-jpular {
+  @include container;
+  @include section-height;
+}
+
+// section-about
+.section-about {
+  @include container;
+  @include section-height;
+}
+
+// section-team
+.section-team {
+  @include container;
+
+  &__container {
+    @include flex(space-around);
+    flex-wrap: wrap;
+  }
+}
+
+.staff {
+  flex-basis: 40%;
+  max-width: 55rem;
+  text-align: center;
+  border: 2px solid $color-grey-light-2;
+  border-radius: 5px;
+  padding: 10rem;
+  margin-bottom: 10rem;
+  transition: 0.2s;
+
+  &:hover {
+    border-color: $color-grey-medium;
+  }
+
+  &__photo {
+    width: 15rem;
+    height: 15rem;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto 2rem;
+    border-radius: 50%;
+
+    &--rohan {
+      background-image: url("../img/rohan.png");
+    }
+    &--woojin {
+      background-image: url("../img/woojin.jpg");
+    }
+    &--colin {
+      background-image: url("../img/blank-user.jpg");
+    }
+    &--junhong {
+      background-image: url("../img/blank-user.jpg");
+    }
+    &--akane {
+      background-image: url("../img/blank-user.jpg");
+    }
+    &--jaehwan {
+      background-image: url("../img/jaehwan.png");
+    }
+    &--miu {
+      background-image: url("../img/miu.png");
+    }
+  }
+
+  &__name {
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+}
